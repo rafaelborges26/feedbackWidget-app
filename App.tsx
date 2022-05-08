@@ -5,7 +5,7 @@ import { useFonts, Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/
 
 import { View } from 'react-native';
 import { theme } from './src/theme';
-import { Widget } from './src/components/Widget'
+import Widget from './src/components/Widget'
 
 export default function App() {
 
