@@ -5,7 +5,11 @@ import { theme } from '../../theme';
 import successImg from '../../assets/success.png'
 import CopyRight from '../Copyright';
 
-const Success = () => {
+interface Props {
+    onSendAnotherFeedback: () => void
+}
+
+const Success = ({ onSendAnotherFeedback }:Props) => {
     
     return (
         <View style={styles.container}>
@@ -15,7 +19,7 @@ const Success = () => {
             Agradecemos o feedback!
             </Text>
 
-            <TouchableOpacity style={styles.button} >
+            <TouchableOpacity style={styles.button} onPress={onSendAnotherFeedback} >
                 <Text style={styles.buttonTitle} >
                 Quero enviar outro
                 </Text>
