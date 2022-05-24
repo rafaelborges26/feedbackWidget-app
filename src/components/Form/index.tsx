@@ -29,8 +29,8 @@ const Form = ({ feedbackType, onFeedbackCanceled, onFeedbackSent, changeSizeBott
 
     const feedbackTypeInfo = feedbackTypes[feedbackType]
 
-    function handleScreenshot() {
-        captureScreen({
+    async function handleScreenshot() {
+        await captureScreen({
             format: 'jpg',
             quality: 0.8
         }).then(uri => setScreenshot(uri))
@@ -44,23 +44,24 @@ const Form = ({ feedbackType, onFeedbackCanceled, onFeedbackSent, changeSizeBott
     async function handleSendFeedback() {
         changeSizeBottomSheet(280);
         Keyboard.dismiss();
-        
+
         if(isSendingFeedback){
             return;
         }
             setIsSendingFeedback(true)
 
-            const screenshotBase64 = screenshot && FileSystem.readAsStringAsync(screenshot, { encoding: 'base64' })
-
+            const screenshotBase64 = screenshot && await FileSystem.readAsStringAsync(screenshot, { encoding: 'base64' }) //bo aq
 
             try {
-                await api.post('feedbacks', {
+                await api.post('/feedbacks', {
                     type: feedbackType,
                     screenshot: `data:image/png;base64, ${screenshotBase64}`,
                     comment,
                 })
+                console.log('arrived')
 
                 onFeedbackSent()
+                setIsSendingFeedback(false)
             } catch (error) {
                 console.log(error)
                 setIsSendingFeedback(false)
