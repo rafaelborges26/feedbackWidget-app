@@ -1,5 +1,5 @@
 ## 💻 Projeto
-Site para o usuário fazer um feedback do site, sendo de um bug, ideia ou outro. Tendo a opção de tirar um print da tela ao clicar para enviar a evidência.
+App para o usuário fazer um feedback do site, sendo de um bug, ideia ou outro. Tendo a opção de tirar um print da tela ao clicar para enviar a evidência.
 
 ## ✨ Tecnologias
 
