@@ -1,6 +1,27 @@
 ## 💻 Projeto
 App para o usuário fazer um feedback, sendo de um bug, ideia ou outro. Tendo a opção de tirar um print da tela ao clicar para enviar a evidência.
 
+
+<strong>Botão Widget:</strong>
+<br/>
+<img src="src/assets/github/Widget.jpeg" alt="Botão Widget" width="400px" />
+
+<strong>Widget Aberto:</strong>
+<br/>
+<img src="src/assets/github/Options.jpeg" alt="Opções" width="400px" />
+
+<strong>Tipo de Feedback selecionado:</strong>
+<br/>
+<img src="src/assets/github/OptionSelected.jpeg" alt="Opção selecionada" width="400px" />
+
+<strong>Formulário preenchido:</strong>
+<br/>
+<img src="src/assets/github/Form.jpeg" alt="Formulário preenchido com texto e imagem" width="400px" />
+
+<strong>Feedback enviado:</strong>
+<br/>
+<img src="src/assets/github/Success.jpeg" alt="Modal de Sucesso" width="400px" />
+
 ## ✨ Tecnologias
 
 -   [ ] React Native
