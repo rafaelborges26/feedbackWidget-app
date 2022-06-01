@@ -31,6 +31,8 @@ App para o usuário fazer um feedback, sendo de um bug, ideia ou outro. Tendo a 
 -   [ ] Axios
 -   [ ] Expo Google Fonts
 -   [ ] React Native Gesture Handler
+-   [ ] FileSystem
+
 
 
 ## :hammer_and_wrench: Features 
@@ -41,6 +43,7 @@ App para o usuário fazer um feedback, sendo de um bug, ideia ou outro. Tendo a 
 -   [ ] Tirar print da tela após clicar no ìcone de câmera e armazenar para utilizar posteriormente
 -   [ ] Após o usuário digitar e tirar o print da tela e clicar em enviar, enviar a requisição de Post para o backend.
 -   [ ] Tela de Sucesso após eviar a requisição.
+
 
 
 
